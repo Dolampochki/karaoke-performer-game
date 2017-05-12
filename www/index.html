@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Karaoke Battle</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/games-screens-style.css">		
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/karaoke_performer.js"></script>
+    
+</head>
+
+<body class="games-screen">
+
+<!-- karaoke_performer -->
+<div class="heart-bg "></div>
+
+<!-- Opening screen -->
+
+
+	<div class="game-screen opening-screen karaoke_performer ">			
+		<audio class="opening-screen-sound">		  
+		  <source src="sounds/StarSlideIn_V2.mp3" type="audio/mpeg">
+		</audio>
+		<div class="game-screen-header">						
+		</div>
+		<div class="game-main">
+			<div class="game-large-icon"><img src="img/game-icons/game_icon_karaoke_battle.png"></div>	
+			<div class="screen-title">Karaoke Battle</div>
+			<div class="screen-description">Record your friends on this device<br />and we’ll tell you who is the best!</div>	
+			<div class="loader">Loading...</div>			
+		</div>
+	</div>
+
+<!-- Add Performer screen -->
+
+
+	<div class="game-screen add-performer-screen karaoke_performer hide">			
+		<div class="game-screen-header">	
+			<div class="game-top-icon"><img src="img/game-icons/top_icon_karaoke_battle.png"></div>					
+		</div>
+		<div class="game-main">	
+			<div class="screen-title">Let’s Karaoke</div>
+			<div class="screen-description">Add all the players</div>
+			
+			<div class="performer-blocks">
+				<div class="performer-block block-1 hide">
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="add-remove remove"></div>
+				</div>
+				<div class="performer-block block-2 hide">
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="add-remove remove"></div>
+				</div>
+				<div class="performer-block block-3 hide">
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="add-remove remove"></div>
+				</div>
+				<div class="performer-block block-4 hide">
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="add-remove remove"></div>
+				</div>
+				<div class="performer-block block-5 hide">
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="add-remove remove"></div>
+				</div>
+				<div class="performer-block block-6 hide">
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="add-remove remove"></div>
+				</div>
+				<div class="performer-block block-7 hide">
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="add-remove remove"></div>
+				</div>
+				<div class="performer-block block-8 hide">
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="add-remove remove"></div>
+				</div>
+				<div class="performer-block block-add">
+					<div class="block-icon"></div>
+					<div class="block-title"><span>Add Performer</span></div>
+					<div class="add-remove add"></div>
+				</div>
+			</div>	
+			<button class="game-result-button play-now-button hide">Play Now</a>
+		</div>
+	</div>
+	
+<!-- Add Performer form screen -->
+
+
+	<div class="game-screen add-performer-form-screen karaoke_performer hide">			
+		<div class="game-screen-header">	
+			<div class="game-top-icon"><img src="img/game-icons/top_icon_karaoke_battle.png"></div>	
+			<div class="top-left-icon"><img src="img/standard_icon_back.png"></div>
+										
+		</div>
+		<div class="game-main">				
+			<form class="add-performer-form-form">
+			<div class="performer-blocks">
+				<div class="performer-block">					
+					<div class="block-field"><input type="text" name="performer_name" class="performer_name_field" id="performer_name" placeholder="Type Full Performer Name" maxlength="17" /></div>
+				</div>
+				<div class="choose-icons">
+				<h4>Choose Avatar</h4>
+					<div class="avatar"><img src="img/avatar_unchecked.png" class="avatar_bg" /><img src="img/avatar_1.png" class="avatar_icon" /></div>
+					<div class="avatar"><img src="img/avatar_unchecked.png" class="avatar_bg" /><img src="img/avatar_2.png" class="avatar_icon" /></div>
+					<div class="avatar"><img src="img/avatar_unchecked.png" class="avatar_bg" /><img src="img/avatar_3.png" class="avatar_icon" /></div>
+					<div class="avatar"><img src="img/avatar_unchecked.png" class="avatar_bg" /><img src="img/avatar_4.png" class="avatar_icon" /></div>
+					<div class="avatar"><img src="img/avatar_unchecked.png" class="avatar_bg" /><img src="img/avatar_5.png" class="avatar_icon" /></div>
+					<div class="avatar"><img src="img/avatar_unchecked.png" class="avatar_bg" /><img src="img/avatar_6.png" class="avatar_icon" /></div>
+					<div class="avatar"><img src="img/avatar_unchecked.png" class="avatar_bg" /><img src="img/avatar_7.png" class="avatar_icon" /></div>
+					<div class="avatar"><img src="img/avatar_unchecked.png" class="avatar_bg" /><img src="img/avatar_8.png" class="avatar_icon" /></div>
+				</div>				
+			</div>
+			<a type="submit" class="game-result-button done">Done</a>
+			</form>
+		</div>
+	</div>	
+	
+
+<!-- Bumper screen -->
+
+
+	<div class="game-screen bumper-screen karaoke_performer hide">			
+		<div class="game-screen-header">	
+			<div class="game-top-icon"><img src="img/game-icons/top_icon_karaoke_battle.png"></div>								
+		</div>
+		<div class="game-main">
+			<div class="game-large-icon"><img src="img/avatar_bg_1.png" class="avatar_bg"><img src="img/avatar_1.png" class="avatar_icon"></div>	
+			<div class="screen-title">Michael Biehl</div>
+			<div class="screen-description">It’s your turn!</div>	
+			<button class="game-result-button record">Record Karaoke</a>		
+		</div>
+	</div>
+	
+<!-- Karaoke List screen -->
+
+
+	<div class="game-screen karaoke-list-screen karaoke_performer hide">			
+		<div class="game-screen-header">	
+			<div class="top-left-icon"><img src="img/standard_icon_back.png"></div>							
+		</div>	
+		<div class="game-main">
+					
+		</div>	
+	</div>
+
+
+<!-- Result -->
+
+	<div class="game-screen result-screen karaoke_performer hide">
+		<div class="game-main">
+			<div class="screen-title">The Battle is On!</div>
+			<div class="card-performance-timer"><img src="img/timer_pink.gif"></div>
+			<div class="results-blocks">
+				<div class="result-block block-1">
+					<div class="result-block-content">
+						<div class="result-progress"></div>
+						<div class="result-icon"><img src="img/avatar_bg_1.png" class="avatar_bg"><img src="img/avatar_1.png" class="avatar_icon"></div>
+					</div>
+				</div>
+				<div class="result-block block-2">
+					<div class="result-block-content">
+						<div class="result-progress"></div>
+						<div class="result-icon"><img src="img/avatar_bg_2.png" class="avatar_bg"><img src="img/avatar_2.png" class="avatar_icon"></div>
+					</div>
+				</div>
+				<div class="result-block block-3">
+					<div class="result-block-content">
+						<div class="result-progress"></div>
+						<div class="result-icon"><img src="img/avatar_bg_3.png" class="avatar_bg"><img src="img/avatar_3.png" class="avatar_icon"></div>
+					</div>
+				</div>
+				<div class="result-block block-4">
+					<div class="result-block-content">
+						<div class="result-progress"></div>
+						<div class="result-icon"><img src="img/avatar_bg_4.png" class="avatar_bg"><img src="img/avatar_4.png" class="avatar_icon"></div>
+					</div>
+				</div>
+				<div class="result-block block-5">
+					<div class="result-block-content">
+						<div class="result-progress"></div>
+						<div class="result-icon"><img src="img/avatar_bg_5.png" class="avatar_bg"><img src="img/avatar_5.png" class="avatar_icon"></div>
+					</div>
+				</div>
+				<div class="result-block block-6">
+					<div class="result-block-content">
+						<div class="result-progress"></div>
+						<div class="result-icon"><img src="img/avatar_bg_6.png" class="avatar_bg"><img src="img/avatar_6.png" class="avatar_icon"></div>
+					</div>
+				</div>
+				<div class="result-block block-7">
+					<div class="result-block-content">
+						<div class="result-progress"></div>
+						<div class="result-icon"><img src="img/avatar_bg_7.png" class="avatar_bg"><img src="img/avatar_7.png" class="avatar_icon"></div>
+					</div>
+				</div>
+				<div class="result-block block-8">
+					<div class="result-block-content">
+						<div class="result-progress"></div>
+						<div class="result-icon"><img src="img/avatar_bg_8.png" class="avatar_bg"><img src="img/avatar_8.png" class="avatar_icon"></div>
+					</div>
+				</div>
+			</div>
+			<button class="game-result-button new-game hide">Next Round</button>	
+		</div>
+	</div>	
+
+<!-- Winner screen -->
+
+
+	<div class="game-screen winner-screen karaoke_performer hide">			
+		<div class="game-screen-header">	
+			<div class="game-top-icon"><img src="img/game-icons/top_icon_karaoke_battle.png"></div>								
+		</div>
+		<div class="game-main">
+			<div class="screen-title"><small>The winner is</small></div>
+			<div class="game-large-icon"><img src="img/avatar_bg_1.png" class="avatar_bg"><img src="img/avatar_1.png" class="avatar_icon"></div>	
+			
+
+			<div class="screen-description">Congratulations!<br/>You’re awesome!</div>		
+		</div>
+	</div>	
+
+<!-- Share screen -->
+
+
+	<div class="game-screen share-screen karaoke_performer hide">			
+		<div class="game-screen-header">	
+			<div class="game-top-icon"><img src="img/game-icons/top_icon_karaoke_battle.png"></div>					
+		</div>
+		<div class="game-main">
+			
+			<div class="performer-blocks">
+				<div class="performer-block block-1">
+					<div class="review-clip"></div>
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="share-screen-buttons">
+						<div class="share-button">Share</div>
+					</div>
+				</div>
+				<div class="performer-block block-2">
+					<div class="review-clip"></div>
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="share-screen-buttons">
+						<div class="share-button">Share</div>
+					</div>
+				</div>
+				<div class="performer-block block-3">
+					<div class="review-clip"></div>
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="share-screen-buttons">
+						<div class="share-button">Share</div>
+					</div>
+				</div>
+				<div class="performer-block block-4">
+					<div class="review-clip"></div>
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="share-screen-buttons">
+						<div class="share-button">Share</div>
+					</div>
+				</div>
+				<div class="performer-block block-5">
+					<div class="review-clip"></div>
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="share-screen-buttons">
+						<div class="share-button">Share</div>
+					</div>
+				</div>
+				<div class="performer-block block-6">
+					<div class="review-clip"></div>
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="share-screen-buttons">
+						<div class="share-button">Share</div>
+					</div>
+				</div>
+				<div class="performer-block block-7">
+					<div class="review-clip"></div>
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="share-screen-buttons">
+						<div class="share-button">Share</div>
+					</div>
+				</div>
+				<div class="performer-block block-8">
+					<div class="review-clip"></div>
+					<div class="block-icon"><img src="img/avatar_1.png" /></div>
+					<div class="block-title"><span>Michael Biehl</span></div>
+					<div class="share-screen-buttons">
+						<div class="share-button">Share</div>
+					</div>
+				</div>
+			</div>	
+			<button class="game-result-button next-round">Next Round</a>
+		</div>
+	</div>
+<!-- Card screen -->
+	
+	<div class="game-screen card-screen rewatch-screen karaoke_performer hide ">
+		
+		<div class="game-screen-header">
+			<div class="top-right-icon"><img src="img/standard_icon_forward.png"></div>
+		</div>
+		<div class="game-main">
+			
+			<div class="game-card">
+				<div class="card-performance-timer"><img src="img/timer.gif"></div>
+				<div class="card-performance-video">
+					<video class="rewatch-video" width="100%" height="100%">
+                         <source src="" type="video/mp4">
+                    </video>                    
+				</div>
+				<div class="card-performance-details">
+					<div class="screen-title"></div>					
+				</div>
+			</div>	
+			
+		</div>
+	</div>
+		
+</body>
+
+</html>
